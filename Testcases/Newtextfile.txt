@@ -1,1 +1,2 @@
-Github function
+Github function 
+Modify or update database 
