@@ -1,0 +1,29 @@
+
+Various ways to create xpath:
+
+//div[@id='nav-flyout-ya-newCust']/a    -- to find using div for start here link in amazon
+
+//a[contains(text(),'Start here')]      -- Gives 2 of them
+
+//a[@rel='nofollow' and contains(text(),'Start here')] - gets only one which distinguishes by @rel attribute.
+
+//*[@type='text']//following::input -- finds email in create account form in amazon website from customername as they r 
+				       siblings in the form.
+
+//*[@type='text']//following::input[2] -- returns password
+
+//*[@type='text']//following::input[3] -- returns reenter password
+
+//*[@type='text']//following::input[@type='submit']  -- returns create amazon account button	
+
+
+CSS selector
+
+
+#continue -- locates create amazon account button with id continue
+
+.a-button-input -- locates create amazon account button by class
+
+.a-button-inner>input -- locates create amazon account button
+
+.a-button-inner>input  + span -- returns button text
