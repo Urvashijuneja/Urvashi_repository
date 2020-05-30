@@ -27,3 +27,10 @@ CSS selector
 .a-button-inner>input -- locates create amazon account button
 
 .a-button-inner>input  + span -- returns button text
+
+Modify message checking
+
+
+
+
+
